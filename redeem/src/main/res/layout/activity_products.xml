@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyLight"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:elevation="@dimen/_4sdp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/_4sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_6sdp"
+                android:text="Search for"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_8sdp" />
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:enabled="false"
+                android:hint="Product name, code or brand..."
+                android:padding="@dimen/_6sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorGrey"
+                android:textSize="@dimen/_8sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/colorGrey" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivSortFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorGreyLight"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:src="@drawable/filter" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_no_products"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_240sdp"
+        android:gravity="center"
+        android:padding="@dimen/_20sdp"
+        android:text="No featured products available right now. You may try Products from catalogue."
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

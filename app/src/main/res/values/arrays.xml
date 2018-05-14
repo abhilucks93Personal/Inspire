@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav_item_activity_titles">
+
+        <item>Carlsberg Credits!</item>
+        <item>Campaign</item>
+        <item>My Wishlist</item>
+        <item>My Orders</item>
+        <item>Statement</item>
+        <item>Community Forum</item>
+    </string-array>
+</resources>

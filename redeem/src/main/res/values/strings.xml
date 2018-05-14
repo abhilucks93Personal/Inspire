@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">redeem</string>
+    <string name="toolbar_title_product_catalogue">Product Catalogue</string>
+    <string name="label_my_account">My Account</string>
+    <string name="label_my_orders">My Orders</string>
+    <string name="label_sort">Sort</string>
+    <string name="label_filter">Filter</string>
+    <array name="titles">
+        <item>Mr</item>
+        <item>Ms</item>
+        <item>Mrs</item>
+        <item>Dr</item>
+    </array>
+</resources>

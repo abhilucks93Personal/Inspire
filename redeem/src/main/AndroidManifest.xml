@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.viscocits.redeem">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+
+        <activity
+            android:name=".catalogue.SortFilterActivity"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <activity
+            android:name=".catalogue.ProductsActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".catalogue.ConfirmOrderActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".catalogue.CartFragment" />
+    </application>
+</manifest>
